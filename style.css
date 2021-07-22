@@ -16,7 +16,7 @@
     --text-color: #423F3E;
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --black-alpha-color: rgba(0, 0, 0, 0.5);
-    --font: "Raleway", sans-serif;
+    --font: 'Montserrat', sans-serif;
     --max-width: 1200px;
     --header-height: 4rem;
   }
@@ -273,9 +273,14 @@ html {
   
   .hero-image-title {
     font-size: 7.5vw;
-    color: var(--hero-text-color);
+    color: var(--white-color);
   }
-  
+  .hero-row{
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 2rem;
+  }
   /* ********** Menu ********** */
   .menu-btn {
     outline: thin solid var(--first-color);
@@ -451,7 +456,9 @@ html {
     filter: grayscale(1);
     border-radius: 5px;
   }
-  
+  .sepia-scale {
+    filter: sepia(0.7);
+  }
   .none {
     display: none;
   }
@@ -556,11 +563,23 @@ html {
     align-items: center;
   }
   
-  .logo a {
+  .logo a{
     color: var(--first-color);
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
+  }
+  .logo::before{
+    content: "<";
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .logo::after{
+    content: "/>";
+    color: var(--first-color);
+    font-weight: bold;
+    font-size: 2rem;
   }
   
   .portfolio-card {
@@ -637,19 +656,23 @@ html {
     color: var(--title-color);
   }
   
-  .service-card svg {
+  .service-card img {
     margin-bottom: 1.25rem;
     fill: var(--first-color);
   }
-  
+  .service-card:hover {
+    cursor:pointer;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    margin: 0.5rem;
+  }
   .social-media a {
     padding: 0 0.4rem;
     text-decoration: none;
   }
   
-  .social-media svg {
-    width: 1.5rem;
-    height: 1.5rem;
+  .social-media img {
+    width: 1rem;
+    height: 1rem;
   }
   
   @media screen and (min-width: 768px) {
@@ -722,10 +745,10 @@ html {
     }
   
     .services > .container {
-      grid-template-columns: repeat(3, 30%);
+      grid-template-columns: repeat(5, 20%);
     }
   
     .services .section-title {
-      grid-column: span 3;
+      grid-column: span 5;
     }
   }
