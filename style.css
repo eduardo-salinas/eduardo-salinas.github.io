@@ -458,7 +458,7 @@ html {
     border-radius: 5px;
   }
   .sepia-scale {
-    filter: brightness(0.6);
+    filter: sepia(0.7);
   }
   .none {
     display: none;
@@ -665,7 +665,7 @@ html {
     cursor:pointer;
     box-shadow: 0 0 1rem rgba(0,0,0,.2);
     margin: 0.5rem;
-    filter:brightness(1.6)
+    filter: sepia(0.1);
   }
   .social-media a {
     padding: 0 0.4rem;
