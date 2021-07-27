@@ -272,7 +272,7 @@ html {
   }
   
   .hero-image-title {
-    font-size: 7.5vw;
+    font-size: 7vw;
     color: var(--white-color);
   }
   .hero-row{
@@ -457,7 +457,7 @@ html {
     border-radius: 5px;
   }
   .sepia-scale {
-    filter: sepia(0.7);
+    filter: brightness(0.6);
   }
   .none {
     display: none;
@@ -664,7 +664,7 @@ html {
     cursor:pointer;
     box-shadow: 0 0 1rem rgba(0,0,0,.2);
     margin: 0.5rem;
-    filter: sepia(0.1);
+    filter: brightness(1.5);
   }
   .social-media a {
     padding: 0 0.4rem;
@@ -720,6 +720,7 @@ html {
       grid-template-columns: repeat(2, 35%);
       justify-content: space-around;
       align-content: center;
+      padding: 6rem 0rem 0rem 0rem;
     }
   
     .contact-cards {
