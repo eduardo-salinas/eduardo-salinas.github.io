@@ -272,8 +272,9 @@ html {
   }
   
   .hero-image-title {
-    font-size: 7.5vw;
+    font-size: 7vw;
     color: var(--white-color);
+    padding-bottom: 3rem;
   }
   .hero-row{
     display: flex;
@@ -717,6 +718,7 @@ html {
   @media screen and (min-width: 1024px) {
     .about {
       display: grid;
+      padding: 5rem 0rem 0rem 0rem;
       grid-template-columns: repeat(2, 35%);
       justify-content: space-around;
       align-content: center;
