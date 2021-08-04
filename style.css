@@ -758,7 +758,7 @@ html {
     }
   
     .services > .container {
-      grid-template-columns: repeat(5, 20%);
+      grid-template-columns: repeat(5, 20% );
     }
   
     .services .section-title {
