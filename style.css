@@ -650,7 +650,7 @@ html {
   .portfolio-details {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-auto-rows: 2rem;
+    grid-auto-rows: 3rem;
   }
   
   .portfolio-details b {
