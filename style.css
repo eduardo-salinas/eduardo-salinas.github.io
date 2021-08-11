@@ -458,7 +458,7 @@ html {
     border-radius: 5px;
   }
   .sepia-scale {
-    filter: brightness(0.6);
+    filter: grayscale(0.7);
   }
   .none {
     display: none;
@@ -596,7 +596,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 1rem;
+    padding: 1rem ;
     background-color: var(--first-alpha-color);
     color: var(--white-color);
     opacity: 0;
@@ -658,7 +658,7 @@ html {
   }
   
   .service-card {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     padding: 1rem;
     text-align: center;
   }
@@ -668,14 +668,20 @@ html {
   }
   
   .service-card img {
-    margin-bottom: 1.25rem;
     fill: var(--first-color);
   }
-  .service-card:hover {
-    cursor:pointer;
-    box-shadow: 0 0 1rem rgba(0,0,0,.2);
-    margin: 0.5rem;
-    filter: brightness(1.5);
+  .service-card img:hover {
+    cursor: hand;
+    animation: bouncel .5s alternate infinite ease-in;
+    filter: grayscale(0);
+  }
+  @keyframes bouncel{
+    0%{
+      transform: translateY(-10%);
+    }
+    100%{
+      transform: translateY(0%)
+    }
   }
   .social-media a {
     padding: 0 0.4rem;
@@ -758,7 +764,7 @@ html {
     }
   
     .services > .container {
-      grid-template-columns: repeat(5, 20% );
+      grid-template-columns: repeat(5, 1fr );
     }
   
     .services .section-title {
