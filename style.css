@@ -382,18 +382,7 @@ html {
   .mast__text span:nth-child(47) {
     animation-delay: 2.65s;
  }
-  .mast__text span:nth-child(48) {
-    animation-delay: 2.6s;
- }
-  .mast__text span:nth-child(49) {
-    animation-delay: 2.65s;
- }
-  .mast__text span:nth-child(50) {
-    animation-delay: 2.7s;
- }
-  .mast__text span:nth-child(51) {
-    animation-delay: 2.75s;
- }
+ 
  .mast__row{
    color: var(--white-color);   
    animation: letter-glow  1s 0s ease both;
