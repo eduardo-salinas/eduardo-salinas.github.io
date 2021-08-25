@@ -7,8 +7,7 @@
     <link rel="icon" href="./assets/icon.svg" />
     <link rel="stylesheet" href="style.css">
     <title>Eduardo Salinas</title>
-    <meta name="description"
-        content="Hola bienvenid@ a mi Portafolio, soy Eduardo Salinas Desarrollador Full Stack">
+    <meta name="description" content="Hola bienvenid@ a mi Portafolio, soy Eduardo Salinas Desarrollador Full Stack">
     <link rel="canonical" href="https://eduardo-salinas.com">
     <link rel="favicon" href="https://eduardo-salinas.com/assets/icon.svg">
     <link rel="apple-touch-icon" href="https://eduardo-salinas.com/assets/icon.svg">
@@ -50,18 +49,18 @@
     <section id="inicio" class="home">
         <article class="hero-image" style="--hero-image: url('assets/home.jpg'); --hero-attachment: fixed;">
             <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color);">
-                    <section class="mast">
-                        <div class="mast__header">
-                            <h1 class="mast__title js-spanize"> ¡Hola👋! Bienvenid@ a mi Portafolio</h1>
-                            <hr class="sep" />
-                            <p class="mast__text js-spanize">
-                                Soy Eduardo Salinas, Desarrollador Full Stack 👨‍💻
-                            </p>
-                            <div class="mast__row">
-                                <img src="./assets/row.png" alt="">
-                            </div>
+                <section class="mast">
+                    <div class="mast__header">
+                        <h1 class="mast__title js-spanize"> ¡Hola👋! Bienvenid@ a mi Portafolio</h1>
+                        <hr class="sep" />
+                        <p class="mast__text js-spanize">
+                            Soy Eduardo Salinas, Desarrollador Full Stack 👨‍💻
+                        </p>
+                        <div class="mast__row">
+                            <img src="./assets/row.png" alt="">
                         </div>
-                    </section>
+                    </div>
+                </section>
             </aside>
         </article>
     </section>
@@ -155,12 +154,25 @@
     <section id="proyectos" class="portfolio section">
         <div class="container">
             <h2 class="section-title">Proyectos</h2>
-            <a href="#trabajo-1" class="portfolio-card">
-                <img src="assets/portafolio-1.webp" alt="">
+            <a href="#trabajo-4" class="portfolio-card">
+                <img src="assets/portafolio-4.webp" alt="">
+                <aside class="portfolio-card-info">
+                    <div>
+                        <h3>Super Hero App</h3>
+                        <p>Sitio web que permite buscar heroes y crear tus equipos. Permite poder ver promedios de stats
+                            y detalles de los héroes.
+                            <br />
+                            <img src="assets/clickme.webp" alt="Trabajo 1">
+                        </p>
+                    </div>
+                </aside>
+            </a>
+            <a href="#trabajo-3" class="portfolio-card">
+                <img src="assets/portafolio-3.webp" alt="">
                 <aside class="portfolio-card-info">
                     <div>
                         <h3>E-Commerce House of Wines</h3>
-                        <p>Un E-Commerce de ventas de vinos. Permite comprar vinos y administrar las 
+                        <p>Un E-Commerce de ventas de vinos. Permite comprar vinos y administrar las
                             ordenes, usuarios y productos desde un panel de control siendo admin.
                             <br />
                             <img src="assets/clickme.webp" alt="Trabajo 2">
@@ -181,12 +193,12 @@
                     </div>
                 </aside>
             </a>
-            <a href="#trabajo-3" class="portfolio-card">
-                <img src="assets/portafolio-3.webp" alt="">
+            <a href="#trabajo-1" class="portfolio-card">
+                <img src="assets/portafolio-1.webp" alt="">
                 <aside class="portfolio-card-info">
                     <div>
                         <h3>Cinema Movies</h3>
-                        <p> Sitio Web que permite buscar películas y ver sus detalles. 
+                        <p> Sitio Web que permite buscar películas y ver sus detalles.
                             Permite también agregar y eliminar las peliculas a una lista de favoritos.
                             <br />
                             <img src="assets/clickme.webp" alt="Trabajo 3">
@@ -195,7 +207,7 @@
                 </aside>
             </a>
     </section>
-    <article class="modal" id="trabajo-1">
+    <article class="modal" id="trabajo-4">
         <div class="modal-content">
             <a href="#cerrar" class="modal-close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -204,7 +216,40 @@
                 </svg>
             </a>
             <article class="portfolio-modal">
-                <img src="assets/portafolio-1.webp" alt="Trabajo 1">
+                <img src="assets/portafolio-4.webp" alt="Trabajo 4">
+                <div class="portfolio-info">
+                    <h3>Super Hero App</h3>
+                    <p>Este proyecto es un challenge realizado con fines prácticos, en el cual renderizo una api externa
+                        con súper héroes que me permite; buscar héroes y seleccionar un equipo de 6, estos pueden ser
+                        solo 3 de
+                        orientación buena y 3 de orientación mala. En el mismo apartado mostrar un promedio de stats
+                        totales del
+                        equipo, peso y altura. Además de poder ver detalles de héroes. Para usar la app de debe
+                        loguearse, el
+                        formulario controlado fue creado con formik. Los estilos fueron creados con Boostrap y
+                        StyledComponent, es
+                        full responsive.</p>
+                    <aside class="portfolio-details">
+                        <small><b>TECNOLOGÍAS:</b></small>
+                        <small>React & Redux | Styled-Component | Bootstrap | Formik</small>
+                        <small><b>REPOSITORIO:</b></small>
+                        <small><a href="https://github.com/eduardo-salinas/SuperHero-App" target="_blank"
+                                rel="noopener">https://github.com/eduardo-salinas/SuperHero-App</a></small>
+                    </aside>
+                </div>
+            </article>
+        </div>
+    </article>
+    <article class="modal" id="trabajo-2">
+        <div class="modal-content">
+            <a href="#cerrar" class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                </svg>
+            </a>
+            <article class="portfolio-modal">
+                <img src="assets/portafolio-3.webp" alt="Trabajo 3">
                 <div class="portfolio-info">
                     <h3>E-Commerce How Of Wines</h3>
                     <p>Uno de los proyectos finales del Bootcamp Henry, realizamos un e-commerce de de venta de vinos.
@@ -224,7 +269,7 @@
             </article>
         </div>
     </article>
-    <article class="modal" id="trabajo-2">
+    <article class="modal" id="trabajo-3">
         <div class="modal-content">
             <a href="#cerrar" class="modal-close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -236,10 +281,10 @@
                 <img src="assets/portafolio-2.webp" alt="Trabajo 2">
                 <div class="portfolio-info">
                     <h3>Food App</h3>
-                    <p>Uno de los proyectos finales del Bootcamp Henry. 
-                        Un sitio web que permite ver, filtrar y crear nuevas recetas. 
-                        Renderizando una api externa desde el backend y creando una base de datos con PostgreSQL. 
-                        Otro de los requisitos era no poder usar ninguna libreria ni framework relacionado 
+                    <p>Uno de los proyectos finales del Bootcamp Henry.
+                        Un sitio web que permite ver, filtrar y crear nuevas recetas.
+                        Renderizando una api externa desde el backend y creando una base de datos con PostgreSQL.
+                        Otro de los requisitos era no poder usar ninguna libreria ni framework relacionado
                         con los estilos, por lo tanto esta diseñado con CSS puro, usando CSS Modules.</p>
                     <aside class="portfolio-details">
                         <small><b>TECNOLOGÍAS:</b></small>
@@ -255,7 +300,7 @@
             </article>
         </div>
     </article>
-    <article class="modal" id="trabajo-3">
+    <article class="modal" id="trabajo-1">
         <div class="modal-content">
             <a href="#cerrar" class="modal-close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -264,13 +309,13 @@
                 </svg>
             </a>
             <article class="portfolio-modal">
-                <img src="assets/portafolio-3.webp" alt="Trabajo 3">
+                <img src="assets/portafolio-1.webp" alt="Trabajo 1">
                 <div class="portfolio-info">
                     <h3>Cinema Movies</h3>
                     <p>Este proyecto fue realizado con fines practicos en el transcurso
-                        del Bootcamp Henry, un sitio web de series y películas que renderiza 
-                        las mismas desde una api externa. Permite buscarlas por nombre y también ver sus detalles. 
-                        Además, poder agregarlas y eliminarlas de una lista de favoritos. 
+                        del Bootcamp Henry, un sitio web de series y películas que renderiza
+                        las mismas desde una api externa. Permite buscarlas por nombre y también ver sus detalles.
+                        Además, poder agregarlas y eliminarlas de una lista de favoritos.
                         Los estilos en este proyecto fueron realizados con Bootstrap y es full responsive.
                     </p>
                     <aside class="portfolio-details">
